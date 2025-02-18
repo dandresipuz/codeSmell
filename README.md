@@ -1,20 +1,68 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+# Proyecto Backend
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+## Tecnologías y Herramientas Utilizadas
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+Este proyecto backend utiliza las siguientes tecnologías y herramientas para garantizar un desarrollo robusto y escalable:
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+- **Spring Boot**: Framework basado en Java para el desarrollo de aplicaciones backend.
+- **Arquitectura Hexagonal**: Diseño modular que facilita la escalabilidad y mantenibilidad del código.
+- **Swagger**: Implementación de documentación interactiva para APIs REST.
+- **Configuración CORS**: Configuración de políticas de seguridad para el intercambio de recursos entre dominios.
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+## Instalación y Configuración
+
+1. Clona este repositorio:
+   ```bash
+   git clone https://daipuz@dev.azure.com/daipuz/daipuz_pruebas/_git/codeSmell
+   ```
+
+2. Accede al directorio del proyecto:
+   ```bash
+   cd codeSmell
+   ```
+
+3. Construye el proyecto con Maven:
+   ```bash
+   mvn clean install
+   ```
+
+4. Inicia la aplicación:
+   ```bash
+   mvn spring-boot:run
+   ```
+
+5. Accede a la documentación de la API en Swagger:
+   ```
+   http://localhost:8080/swagger-ui/index.html
+   ```
+
+## Autenticación
+
+Para acceder a los endpoints protegidos, utiliza las siguientes credenciales:
+
+- **Usuario**: `admin`
+- **Contraseña**: `admin`
+
+## Arquitectura del Proyecto
+
+Este backend está diseñado bajo la arquitectura hexagonal, lo que permite una mejor separación de responsabilidades y facilita la integración con distintos componentes externos.
+
+- **Capa de Dominio**: Contiene las reglas de negocio y entidades del sistema.
+- **Capa de Aplicación**: Implementa los casos de uso y la lógica de la aplicación.
+- **Capa de Infraestructura**: Maneja la persistencia, controladores y configuración.
+
+## Contribución
+
+Si deseas contribuir a este proyecto, sigue estos pasos:
+
+1. Crea un fork del repositorio.
+2. Crea una rama con tu nueva funcionalidad:
+   ```bash
+   git checkout -b feature/nueva-funcionalidad
+   ```
+3. Realiza tus cambios y confirma los commits.
+4. Envía un pull request para su revisión.
+
+## Contacto
+
+Para consultas o soporte, puedes contactar a los mantenedores del proyecto a través de diegoipuzg@gmail.com o abrir un issue en el repositorio.
