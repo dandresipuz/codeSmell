@@ -13,7 +13,7 @@ Este proyecto backend utiliza las siguientes tecnologías y herramientas para ga
 
 1. Clona este repositorio:
    ```bash
-   git clone https://daipuz@dev.azure.com/daipuz/daipuz_pruebas/_git/codeSmell
+   git clone https://github.com/dandresipuz/codeSmell.git
    ```
 
 2. Accede al directorio del proyecto:
